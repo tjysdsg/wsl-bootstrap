@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# suppress daily login message
+touch ~/.hushlogin
+
 # dir this script is in
 file_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 
