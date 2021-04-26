@@ -49,3 +49,5 @@ pip install pip -U
 
 # conda configs
 cp ${file_dir}/.condarc ~/.condarc
+
+./setup_jetbrains_ssh

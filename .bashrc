@@ -28,12 +28,10 @@ if ! shopt -oq posix; then
   fi
 fi
 
-alias proxify='export http_proxy="http://0.0.0.0:8118";export https_proxy="https://0.0.0.0:8118";export HTTP_PROXY="http://0.0.0.0:8118";export HTTPS_PROXY="https://0.0.0.0:8118"'
+alias proxify='export http_proxy="http://0.0.0.0:8119";export https_proxy="https://0.0.0.0:8119";export HTTP_PROXY="http://0.0.0.0:8119";export HTTPS_PROXY="https://0.0.0.0:8119"'
 alias unproxify='unset http_proxy; unset https_proxy; unset HTTP_PROXY; unset HTTPS_PROXY'
 
-export PATH=$PATH:$HOME/local/go/bin:$HOME/go/bin
 export PATH=$PATH:$HOME/.local/bin
-alias jn="jupyter-notebook --no-browser"
 
 # >>> conda initialize >>>
 __conda_setup="$("/home/${USER}/miniconda3/bin/conda" 'shell.bash' 'hook' 2> /dev/null)"
