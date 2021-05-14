@@ -43,8 +43,7 @@ cp ${file_dir}/.bashrc ~/.bashrc
 source ~/.bashrc
 
 # pip mirrors
-mkdir -p ~/.config/pip
-cp ${file_dir}/pip.conf ~/.config/pip/pip.conf
+pip config set global.index-url  https://mirrors.aliyun.com/pypi/simple/
 pip install pip -U
 
 # conda configs
